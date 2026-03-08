@@ -27,10 +27,10 @@ export default function App() {
   return (
     <div className="min-h-screen selection:bg-honey selection:text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-warm-cream/80 backdrop-blur-md border-b border-velvet-red/5">
+      <nav className="fixed top-0 w-full z-50 bg-warm-cream/80 backdrop-blur-md border-b border-velvet-red/5" aria-label="Main Navigation">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-velvet-red rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-velvet-red rounded-full flex items-center justify-center" aria-hidden="true">
               <Coffee className="text-warm-cream w-6 h-6" />
             </div>
             <span className="font-serif text-2xl font-bold tracking-tight text-velvet-red">Velvet</span>
@@ -38,17 +38,22 @@ export default function App() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest">
-            <a href="#menu" className="hover:text-honey transition-colors">Menu</a>
-            <a href="#about" className="hover:text-honey transition-colors">About</a>
-            <a href="#location" className="hover:text-honey transition-colors">Location</a>
-            <a href="#contact" className="hover:text-honey transition-colors">Contact</a>
-            <button className="bg-velvet-red text-warm-cream px-6 py-2 rounded-full hover:bg-velvet-red/90 transition-all">
+            <a href="#menu" className="hover:text-honey transition-colors focus:outline-none focus:ring-2 focus:ring-honey rounded">Menu</a>
+            <a href="#about" className="hover:text-honey transition-colors focus:outline-none focus:ring-2 focus:ring-honey rounded">About</a>
+            <a href="#location" className="hover:text-honey transition-colors focus:outline-none focus:ring-2 focus:ring-honey rounded">Location</a>
+            <a href="#contact" className="hover:text-honey transition-colors focus:outline-none focus:ring-2 focus:ring-honey rounded">Contact</a>
+            <button className="bg-velvet-red text-warm-cream px-6 py-2 rounded-full hover:bg-velvet-red/90 transition-all focus:outline-none focus:ring-2 focus:ring-honey">
               Order Online
             </button>
           </div>
 
           {/* Mobile Toggle */}
-          <button className="md:hidden text-velvet-red" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button 
+            className="md:hidden text-velvet-red p-2" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-expanded={isMenuOpen}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
             {isMenuOpen ? <X /> : <MenuIcon />}
           </button>
         </div>
