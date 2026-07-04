@@ -249,8 +249,8 @@ export default function App() {
             >
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-elegant-lg relative z-10">
                 <img 
-                  src="https://images.unsplash.com/photo-1525470854769-ad05a36d13d4?q=80&w=1974&auto=format&fit=crop" 
-                  alt="Founder roasting coffee" 
+                  src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=1974&auto=format&fit=crop" 
+                  alt="Coffee beans and grounds on wooden board" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
