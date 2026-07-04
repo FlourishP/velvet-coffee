@@ -204,8 +204,8 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-x-16 gap-y-10">
             {[
               { name: "Velvet Cortado", price: "$4.50", desc: "Equal parts espresso and steamed milk with a hint of dark chocolate.", img: "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=1974&auto=format&fit=crop" },
-              { name: "Honey Lavender Latte", price: "$5.75", desc: "Local wildflower honey and organic lavender buds steeped in oat milk.", img: "https://images.unsplash.com/photo-1572286258217-31500463991c?q=80&w=1974&auto=format&fit=crop" },
-              { name: "Portland Fog", price: "$5.25", desc: "Earl Grey tea, vanilla bean syrup, and velvety steamed milk.", img: "https://images.unsplash.com/photo-1544787210-228394c3d3e2?q=80&w=1974&auto=format&fit=crop" },
+              { name: "Honey Lavender Latte", price: "$5.75", desc: "Local wildflower honey and organic lavender buds steeped in oat milk.", img: "https://images.unsplash.com/photo-1657763889381-befa1a547b3f?q=80&w=1974&auto=format&fit=crop" },
+              { name: "Portland Fog", price: "$5.25", desc: "Earl Grey tea, vanilla bean syrup, and velvety steamed milk.", img: "https://images.unsplash.com/photo-1563911892317-47551470aed8?q=80&w=1974&auto=format&fit=crop" },
               { name: "Nitro Cold Brew", price: "$6.00", desc: "18-hour slow steep infused with nitrogen for a creamy finish.", img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=2071&auto=format&fit=crop" }
             ].map((item, i) => (
               <motion.div 
