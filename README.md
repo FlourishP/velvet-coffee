@@ -1,20 +1,47 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+# Velvet Coffee ☕
+
+**Premium coffee shop landing page** — elegant, responsive, and conversion-focused.
+
+[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen)](https://velvet-coffee.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind-CSS-blue)](https://tailwindcss.com)
+
 </div>
 
-# Run and deploy your AI Studio app
+## Overview
 
-This contains everything you need to run your app locally.
+Velvet Coffee is a high-converting landing page for a specialty coffee shop. Features a cinematic hero section, animated menu showcase, customer testimonials, and a contact form — all optimized for speed and accessibility.
 
-View your app in AI Studio: https://ai.studio/apps/a820a926-8f66-4bc7-a89a-75fa05d6e268
+## Tech Stack
 
-## Run Locally
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 16 (App Router) |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Forms | React Hook Form + Zod |
+| Deployment | Vercel |
 
-**Prerequisites:**  Node.js
+## Sections
 
+- **Hero** — Cinematic imagery with CTA
+- **Menu** — Animated product grid with categories
+- **Testimonials** — Customer reviews carousel
+- **Contact** — Working contact form
+- **Footer** — Links, hours, location
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Features
+
+- Fully responsive (mobile → desktop)
+- WCAG 2.1 AA accessible
+- SEO-optimized with metadata
+- Fast Refresh, TypeScript strict mode
